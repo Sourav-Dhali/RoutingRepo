@@ -1,0 +1,22 @@
+<input type="text" #uName placeholder="User Name">
+<button (click)="onCreateuser(uName)">Enter User</button>
+<button (click)="onRemoveuser()" style="color: red;">Remove</button>
+<table>
+    <thead>
+        <tr>
+            <th style="background-color: black; color: white;">UserName</th>
+            <th style="background-color: black; color: white;">Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of data; index as i">
+            <td style="color: rgb(55, 0, 255);">{{user.name}}</td>
+            <td><button style="color: red;" (click)="onRemove(i)">Remove</button></td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<!-- <button type="button" class="btn btn-primary">Single Button</button> -->
+Dart & Time: {{now | date :  "M/d/yy h:mm a"}}
+<br>
+<!-- <img src="../../assets/pexels-anush-gorak-1431282.jpg" alt=""> -->

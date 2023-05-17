@@ -1,0 +1,20 @@
+<div class="container">
+    <h4>Date/Time: {{date | date:'short'}}</h4>
+    <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis nulla saepe doloribus neque, sunt
+        distinctio rerum tenetur. Iste, reprehenderit deleniti aliquam sequi vel eveniet earum id itaque modi quam.</p>
+    <hr>
+
+    <button (click)="showHide(statusOnline)">SHOW/HIDE</button><br>
+    <ng-container *ngIf="statusOnline">
+        <input type="text" #pName placeholder="Product Name">
+        <button (click)="addProduct(pName)">Add Product</button>
+        <button (click)="remove()">Remove Product</button>
+        <div class="products">
+            <div *ngFor="let proitem of products">
+                {{proitem.name}}
+            </div>
+        </div>
+    </ng-container>
+
+</div>

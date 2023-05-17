@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>About Us</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis nulla saepe doloribus neque, sunt distinctio rerum tenetur. Iste, reprehenderit deleniti aliquam sequi vel eveniet earum id itaque modi quam.</p>
+    <hr>
+    <br><br>
+    <div class="nameSub">
+        <input type="text" #uname placeholder="User Name">
+        <button (click)="enterB(uname)">Enter Name</button>
+        <button (click)="remove()">Remove</button>
+        <table>
+            <thead class="userT">
+                <tr>
+                    <th>User Name</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of names">
+                    <td>{{i.name}}</td>
+                    <td><button (click)="removeOne(i)">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

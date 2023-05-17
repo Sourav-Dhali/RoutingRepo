@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(165, 170, 121);
+    color: rgb(24, 19, 19);
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}

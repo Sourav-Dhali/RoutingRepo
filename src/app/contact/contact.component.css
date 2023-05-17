@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(121, 121, 170);
+    color: rgb(24, 19, 19);
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.containerProducts{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px 40px;
+    margin-top: 25px;
+}
+.card{
+    width: 31em;
+    height: 10em;
+    
+}

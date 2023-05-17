@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    box-sizing: border-box;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(170, 124, 121);
+    color: rgb(24, 19, 19);
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+h4{
+    position: absolute;
+    right: 150px;
+}
+hr{
+    color: white;
+}
+button{
+    border: 0;
+    border-radius: 5px;
+    padding: 0 7px;
+    margin: 2px;
+    background: rgb(126, 74, 74);
+    color: rgb(241, 231, 97);
+}
+input{
+    border: 0;
+    border-radius: 5px;
+    padding: 0 3px;
+    color:rgb(109, 104, 28); ;
+}
