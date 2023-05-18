@@ -21,7 +21,7 @@ import { CardComponent } from './card/card.component';
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/loginn',
+    redirectTo: 'loginn',
     pathMatch: 'full'
   },
   { path: 'loginn', component: LoginnComponent },
