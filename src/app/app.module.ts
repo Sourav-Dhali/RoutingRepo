@@ -18,39 +18,6 @@ import { TvComponent } from './products/tv/tv.component';
 import { WashingmachineComponent } from './products/washingmachine/washingmachine.component';
 import { CardComponent } from './card/card.component';
 
-const appRoutes: Routes = [
-  {
-    path: '',
-    redirectTo: 'loginn',
-    pathMatch: 'full'
-  },
-  { path: 'loginn', component: LoginnComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  {
-    path: 'products',
-    children: [
-      { path: '', component: ProductsComponent },
-      { path: 'product', component: ProductsComponent },
-      { path: 'laptop', component: LaptopComponent },
-      { path: 'tv', component: TvComponent },
-      { path: 'mobile', component: MobileComponent },
-      { path: 'washingmachine', component: WashingmachineComponent }
-    ]
-  },
-  {
-    path: 'contact',
-    children: [
-      { path: 'laptop', component: LaptopComponent },
-      { path: 'tv', component: TvComponent },
-      { path: 'mobile', component: MobileComponent },
-      { path: 'washingmachine', component: WashingmachineComponent }
-    ]
-  },
-  { path: '**', component: NotfoundComponent }
-]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +37,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule
   ],
   providers: [],
